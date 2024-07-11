@@ -5,10 +5,14 @@ import App from "./App";
 import "./index.css";
 
 const theme = extendTheme({
+  colors: {
+    offwhite: "#F5F5F5",
+    indigo: "#00416A",
+  },
   styles: {
     global: {
       body: {
-        bg: "#F7FAFC",
+        bg: "offwhite",
       },
     },
   },
