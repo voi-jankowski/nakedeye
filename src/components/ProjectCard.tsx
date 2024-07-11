@@ -18,14 +18,11 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ name, image, link }) => (
   <Center py={12}>
     <LinkBox
       as="article"
-      role={"group"}
       p={6}
       maxW={"330px"}
       w={"full"}
-      bg={"white"}
+      bg={"transparent"}
       boxShadow={"2xl"}
-      pos={"relative"}
-      zIndex={1}
     >
       <LinkOverlay href={link} isExternal>
         <Image

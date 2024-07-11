@@ -1,5 +1,5 @@
 // src/components/Benefits.tsx
-import { Box, Flex, Grid, GridItem, Text } from "@chakra-ui/react";
+import { Box, Grid } from "@chakra-ui/react";
 import BenefitCard from "./BenefitCard";
 
 interface BenefitProps {

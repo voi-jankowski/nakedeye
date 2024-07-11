@@ -1,5 +1,5 @@
 // src/components/WelcomeHeading.tsx
-import { Box, VStack, Text } from "@chakra-ui/react";
+import { VStack, Text } from "@chakra-ui/react";
 
 const WelcomeHeading = () => (
   <VStack
