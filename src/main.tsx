@@ -8,7 +8,7 @@ const theme = extendTheme({
   colors: {
     offwhite: "#F5F5F5",
     indigo: "#00416A",
-    blue: "#007BA7",
+    blue: "#2e5090",
   },
   styles: {
     global: {
