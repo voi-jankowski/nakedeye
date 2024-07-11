@@ -10,13 +10,13 @@ const theme = extendTheme({
     indigo: "#00416A",
     blue: "#2e5090",
   },
-  styles: {
-    global: {
-      body: {
-        bg: "linear-gradient(rgba(228, 236, 243, 0.75) -1.48%, rgba(245, 247, 253, 0.75) 42.02%, rgba(245, 247, 253, 0) 73.75%)",
-      },
-    },
-  },
+  // styles: {
+  //   global: {
+  //     body: {
+  //       bg: "linear-gradient(rgba(228, 236, 243, 0.75) -1.48%, rgba(245, 247, 253, 0.75) 42.02%, rgba(245, 247, 253, 0) 73.75%)",
+  //     },
+  //   },
+  // },
   components: {
     Box: {
       baseStyle: {
