@@ -14,10 +14,10 @@ const Header = () => (
     alignItems="center"
     justifyContent="space-between"
   >
-    <Text color="darknavy" fontSize="lg" fontWeight="bold">
+    <Text color="indigo" fontSize="lg" fontWeight="bold">
       Brand Name
     </Text>
-    <HStack spacing={8} color="darknavy" fontSize="sm">
+    <HStack spacing={8} color="indigo" fontSize="sm">
       <Text>Menu Item 1</Text>
       <Text>Menu Item 2</Text>
       <Text>Menu Item 3</Text>
