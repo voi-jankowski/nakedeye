@@ -4,7 +4,7 @@ const Home = () => (
   <Container maxW="container.xl" bg="white" marginTop="4rem" p={0}>
     <Box
       height="80vh"
-      bgImage="url('/path/to/your/image.jpg')"
+      bgImage="url('https://fastly.picsum.photos/id/10/2500/1667.jpg?hmac=J04WWC_ebchx3WwzbM-Z4_KC_LeLBWr5LZMaAkWkF68')"
       bgSize="cover"
       bgPosition="center"
     />
