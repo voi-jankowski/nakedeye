@@ -2,7 +2,7 @@
 import { Box, Grid, GridItem, Text } from "@chakra-ui/react";
 
 const Benefits = () => (
-  <Box height="25%" bg="rgba(0, 65, 106, 0.5)" m={0} p={0}>
+  <Box height="100%" bg="rgba(0, 65, 106, 0.4)" m={0} p={0}>
     <Grid templateColumns="repeat(4, 1fr)" height="100%">
       <GridItem display="flex" justifyContent="center" alignItems="center">
         <Text color="white">Benefit 1</Text>

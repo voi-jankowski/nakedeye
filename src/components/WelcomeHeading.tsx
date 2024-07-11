@@ -3,10 +3,10 @@ import { Box, VStack, Text } from "@chakra-ui/react";
 
 const WelcomeHeading = () => (
   <VStack
-    height="75%"
+    height="100%"
     justifyContent="center"
     alignItems="center"
-    bg="rgba(255, 255, 255, 0.1)"
+    bg="rgba(255, 255, 255, 0.2)"
     m={0}
     p={0}
   >
