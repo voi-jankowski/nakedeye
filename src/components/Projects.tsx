@@ -1,5 +1,5 @@
 // src/components/Projects.tsx
-import { Box, Flex, Text, Image } from "@chakra-ui/react";
+import { Flex } from "@chakra-ui/react";
 import ProjectCard from "./ProjectCard";
 
 interface ProjectProps {

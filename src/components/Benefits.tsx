@@ -32,11 +32,20 @@ const benefits: BenefitProps[] = [
 
 const Benefits = () => (
   <Box height="100%" bg="rgba(0, 65, 106, 0.4)">
-    <Flex justifyContent="center" alignItems="center" height="100%">
+    <Grid
+      templateColumns={{
+        base: "1fr",
+        md: "repeat(2, 1fr)",
+        lg: "repeat(4, 1fr)",
+      }}
+      gap={6}
+      p={4}
+      justifyContent="space-around"
+    >
       {benefits.map((benefit) => (
         <BenefitCard title={benefit.title} description={benefit.description} />
       ))}
-    </Flex>
+    </Grid>
   </Box>
 );
 
