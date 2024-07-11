@@ -38,13 +38,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ name, image, link }) => (
         />
 
         <Box mt={-12} pos={"relative"} height={"47px"}>
-          <Heading
-            fontSize={"2xl"}
-            fontFamily={"body"}
-            fontWeight={500}
-            color={"white"}
-            pl={4}
-          >
+          <Heading fontSize={"2xl"} fontWeight={500} color={"white"} pl={4}>
             {name}
           </Heading>
         </Box>

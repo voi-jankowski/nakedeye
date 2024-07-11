@@ -15,16 +15,13 @@ interface BenefitCardProps {
 }
 
 const BenefitCard: React.FC<BenefitCardProps> = ({ title, description }) => (
-  <Card>
+  <Card background={"transparent"} rounded={0} color={"white"} mx={6}>
     <CardHeader>
       <Heading size="md">{title}</Heading>
     </CardHeader>
     <Divider />
     <CardBody>
       <Box>
-        <Heading size="xs" textTransform="uppercase">
-          Summary
-        </Heading>
         <Text pt="2" fontSize="sm">
           {description}
         </Text>
