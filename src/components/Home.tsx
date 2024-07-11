@@ -1,7 +1,8 @@
 // src/components/Home.tsx
-import { Box, Container, Flex, Text, VStack } from "@chakra-ui/react";
+import { Box, Container, VStack } from "@chakra-ui/react";
 import WelcomeHeading from "./WelcomeHeading";
 import Benefits from "./Benefits";
+import Projects from "./Projects";
 
 const Home = () => (
   <Container maxW="container.2xl" bg="rgb(255, 255, 255)" p={0}>
@@ -21,11 +22,7 @@ const Home = () => (
       </Box>
     </VStack>
     <Box height="20vh" bg="transparent">
-      <Flex height="100%" justifyContent="space-around" alignItems="center">
-        <Text color="blue">Element 1</Text>
-        <Text color="blue">Element 2</Text>
-        <Text color="blue">Element 3</Text>
-      </Flex>
+      <Projects />
     </Box>
   </Container>
 );
