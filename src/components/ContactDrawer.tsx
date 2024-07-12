@@ -9,19 +9,28 @@ import {
   DrawerHeader,
   DrawerOverlay,
   useDisclosure,
+  Text,
 } from "@chakra-ui/react";
 import { useRef } from "react";
 import ContactForm from "./ContactForm";
 
 const ContactDrawer = () => {
   const { isOpen, onOpen, onClose } = useDisclosure();
-  const btnRef = useRef<HTMLButtonElement>(null);
+  const btnRef = useRef<HTMLParagraphElement>(null);
 
   return (
     <>
-      <Button ref={btnRef} colorScheme="blue" onClick={onOpen} mt={4}>
+      <Text
+        ref={btnRef as React.RefObject<HTMLParagraphElement>}
+        onClick={onOpen}
+        cursor="pointer"
+        fontWeight={"bold"}
+        fontSize={"md"}
+        bg="rgba(245, 245, 245, 0.4)"
+        p={2}
+      >
         Contact Us
-      </Button>
+      </Text>
       <Drawer
         isOpen={isOpen}
         placement="right"

@@ -1,5 +1,6 @@
 // src/components/Header.tsx
 import { Container, Flex, HStack, Text } from "@chakra-ui/react";
+import ContactDrawer from "./ContactDrawer";
 
 const Header = () => (
   <Flex
@@ -19,13 +20,13 @@ const Header = () => (
       justifyContent="space-between"
       alignItems="center"
     >
-      <Text color="blue" fontSize="xl" fontWeight="bold">
+      <Text color="blue" fontSize="2xl" fontWeight="bold">
         nakedEyeCreative
       </Text>
-      <HStack spacing={8} color="blue" fontSize="sm" fontWeight="medium">
+      <HStack spacing={8} color="blue" fontWeight={"bold"} fontSize={"md"}>
         <Text>Menu Item 1</Text>
         <Text>Menu Item 2</Text>
-        <Text>Menu Item 3</Text>
+        <ContactDrawer />
       </HStack>
     </Container>
   </Flex>
