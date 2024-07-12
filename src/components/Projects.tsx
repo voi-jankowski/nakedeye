@@ -36,7 +36,7 @@ const Projects = () => (
     alignItems="center"
     wrap="wrap"
     p={4}
-    bg="transparent"
+    bg="offwhite"
   >
     {projects.map((project) => (
       <ProjectCard

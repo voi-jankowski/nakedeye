@@ -1,5 +1,5 @@
 // src/components/WelcomeHeading.tsx
-import { VStack, Text, Button } from "@chakra-ui/react";
+import { VStack, Text } from "@chakra-ui/react";
 import ContactDrawer from "./ContactDrawer";
 
 const WelcomeHeading = () => (

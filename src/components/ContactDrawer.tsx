@@ -26,8 +26,9 @@ const ContactDrawer = () => {
         cursor="pointer"
         fontWeight={"bold"}
         fontSize={"md"}
-        bg="rgba(245, 245, 245, 0.4)"
+        bg="rgba(245, 245, 245, 0.3)"
         p={2}
+        color={"indigo"}
       >
         Contact Us
       </Text>
