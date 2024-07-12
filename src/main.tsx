@@ -28,6 +28,28 @@ const theme = extendTheme({
         borderRadius: "0",
       },
     },
+    Input: {
+      baseStyle: {
+        field: {
+          borderRadius: "0",
+          border: "none",
+          borderBottom: "1px solid",
+        },
+      },
+      defaultProps: {
+        focusBorderColor: "transparent",
+      },
+    },
+    Textarea: {
+      baseStyle: {
+        rounded: "0",
+      },
+    },
+    Button: {
+      baseStyle: {
+        borderRadius: "0",
+      },
+    },
   },
 });
 

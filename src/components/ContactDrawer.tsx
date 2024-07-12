@@ -39,14 +39,14 @@ const ContactDrawer = () => {
         finalFocusRef={btnRef}
       >
         <DrawerOverlay />
-        <DrawerContent>
+        <DrawerContent bg="indigo" color="white">
           <DrawerCloseButton />
           <DrawerHeader>Get in Touch</DrawerHeader>
           <DrawerBody>
             <ContactForm />
           </DrawerBody>
           <DrawerFooter>
-            <Button variant="outline" mr={3} onClick={onClose}>
+            <Button variant="outline" color={"white"} mr={3} onClick={onClose}>
               Cancel
             </Button>
           </DrawerFooter>

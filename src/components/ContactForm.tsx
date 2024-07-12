@@ -14,12 +14,18 @@ import { MdOutlineEmail } from "react-icons/md";
 
 const ContactForm = () => {
   return (
-    <VStack spacing={5}>
+    <VStack spacing={5} rounded={0}>
       <FormControl isRequired>
         <FormLabel>Name</FormLabel>
         <InputGroup>
           <InputLeftElement children={<BsPerson />} />
-          <Input type="text" name="name" placeholder="Your Name" />
+          <Input
+            type="text"
+            name="name"
+            placeholder="Your Name"
+            border={"none"}
+            borderBottom={"1px solid"}
+          />
         </InputGroup>
       </FormControl>
       <FormControl isRequired>
@@ -36,9 +42,10 @@ const ContactForm = () => {
           placeholder="Your Message"
           rows={12}
           resize="none"
+          //   rounded={0}
         />
       </FormControl>
-      <Button variant="outline" width={"100%"}>
+      <Button variant="solid" color={"indigo"} width={"100%"}>
         Send Message
       </Button>
     </VStack>
