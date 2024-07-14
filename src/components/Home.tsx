@@ -3,6 +3,7 @@ import { Box, Container, VStack } from "@chakra-ui/react";
 import WelcomeHeading from "./WelcomeHeading";
 import Benefits from "./Benefits";
 import Projects from "./Projects";
+import CallToAction from "./CallToAction";
 
 const Home = () => (
   <Container maxW="container.2xl" bg="rgb(255, 255, 255)" p={0}>
@@ -20,8 +21,11 @@ const Home = () => (
         <Benefits />
       </Box>
     </VStack>
-    <Box bg="transparent">
+    <Box bg="offwhite">
       <Projects />
+    </Box>
+    <Box bg="offwhite">
+      <CallToAction />
     </Box>
   </Container>
 );

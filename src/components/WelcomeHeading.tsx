@@ -1,6 +1,5 @@
 // src/components/WelcomeHeading.tsx
 import { VStack, Text } from "@chakra-ui/react";
-import ContactDrawer from "./ContactDrawer";
 
 const WelcomeHeading = () => (
   <VStack
@@ -17,7 +16,6 @@ const WelcomeHeading = () => (
     <Text fontSize="3xl" color="indigo">
       Social Media VFX Marketing Specialist
     </Text>
-    <ContactDrawer />
   </VStack>
 );
 
