@@ -1,38 +1,48 @@
 // src/components/CallToAction.tsx
-import { Box, Flex, Heading, Container, Text, Spacer } from "@chakra-ui/react";
+import { Box, Flex, Heading, VStack, Text } from "@chakra-ui/react";
 import ContactForm from "./ContactForm";
 
 const CallToAction = () => (
-  <Container maxW="container.xl" py={16}>
+  <Box bg="rgba(245, 245, 245, 0.4)" py={8} px={4} mx={6}>
     <Flex
       direction={{ base: "column", md: "row" }}
-      align="center"
-      justify="space-between"
+      align="right"
+      justify="center"
     >
-      <Box textAlign={{ base: "center", md: "left" }} mb={{ base: 8, md: 0 }}>
-        <Heading
-          as="h2"
-          size="3xl"
-          color="indigo"
-          lineHeight="shorter"
-          textAlign={"end"}
-        >
-          Let’s create something{" "}
-          <Text as="span" color="blue" fontSize="8xl">
-            cool
-          </Text>{" "}
-          together
-        </Heading>
-        <Text fontSize="xl" color="blue" mt={4}>
-          Same day reply!
-        </Text>
+      <Box textAlign={{ base: "right", md: "right" }} mb={{ base: 8, md: 0 }}>
+        <VStack align="end" spacing={4}>
+          <Heading as="h2" size="3xl" color="black" lineHeight="shorter">
+            <Text as="span" bg="black" color="white" px={2}>
+              let's.
+            </Text>
+          </Heading>
+          <Heading as="h2" size="3xl" color="black" lineHeight="shorter">
+            <Text as="span" bg="black" color="white" px={2}>
+              make.
+            </Text>
+          </Heading>
+          <Heading as="h2" size="3xl" color="black" lineHeight="shorter">
+            <Text as="span" bg="black" color="white" px={2}>
+              you.
+            </Text>
+          </Heading>
+          <Heading as="h2" size="3xl" color="black" lineHeight="shorter">
+            <Text as="span" bg="black" color="yellow" px={2}>
+              something.
+            </Text>
+          </Heading>
+          <Heading as="h2" size="3xl" color="black" lineHeight="shorter">
+            <Text as="span" bg="black" color="white" px={2}>
+              rad.
+            </Text>
+          </Heading>
+        </VStack>
       </Box>
-      <Spacer />
-      <Container maxW="container.sm">
+      <Box width={{ base: "100%", md: "50%" }} ml={{ md: 8 }}>
         <ContactForm />
-      </Container>
+      </Box>
     </Flex>
-  </Container>
+  </Box>
 );
 
 export default CallToAction;
