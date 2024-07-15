@@ -5,7 +5,7 @@ const Header = () => (
   <Flex
     as="header"
     position="fixed"
-    h={{ base: 20, sm: 20, md: 28, lg: 32, xl: 32, "2xl": 36 }}
+    h={{ base: 16, sm: 20, md: 28, lg: 32, xl: 32, "2xl": 36 }}
     top="0"
     left="0"
     width="100%"

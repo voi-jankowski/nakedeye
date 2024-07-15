@@ -1,6 +1,6 @@
 // src/components/Home.tsx
 import { Box, Container, VStack } from "@chakra-ui/react";
-import WelcomeHeading from "./WelcomeHeading";
+import Subheading from "./Subheading";
 import Benefits from "./Benefits";
 import Projects from "./Projects";
 import CallToAction from "./CallToAction";
@@ -14,8 +14,8 @@ const Home = () => (
       bgSize="cover"
       bgPosition="center"
     >
-      <Box height="65vh" width="100%" p={0} m={0}>
-        <WelcomeHeading />
+      <Box height="65vh" width="100%" pt={{ base: 20, sm: 24, md: 36 }} m={0}>
+        <Subheading />
       </Box>
       <Box width="100%" p={0} m={0}>
         <Benefits />

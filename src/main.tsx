@@ -10,7 +10,7 @@ const theme = extendTheme({
   colors: {
     offwhite: "#F5F5F5",
     indigo: "#00416A",
-    blue: "#2e5090",
+    blue: "#021858",
   },
   fonts: {
     heading: "'Urbanist', sans-serif",
