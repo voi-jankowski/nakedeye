@@ -6,12 +6,13 @@ const Projects = () => (
     <Box
       height={{ base: "50vh", md: "50vh" }}
       width="100%"
-      bg="url('https://images.unsplash.com/photo-1506748686214-e9df14d4d9d0?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80')"
+      bg="url('https://fastly.picsum.photos/id/119/3264/2176.jpg?hmac=PYRYBOGQhlUm6wS94EkpN8dTIC7-2GniC3pqOt6CpNU')"
       bgSize="cover"
       bgPosition="center"
       display="flex"
       alignItems="center"
       justifyContent="center"
+      boxShadow="xl"
     >
       <Text
         fontSize={{ base: "2xl", sm: "3xl", md: "4xl", lg: "5xl", xl: "6xl" }}

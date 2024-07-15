@@ -10,9 +10,10 @@ const Home = () => (
     <VStack
       spacing={0}
       m={0}
-      bg="url('https://fastly.picsum.photos/id/10/2500/1667.jpg?hmac=J04WWC_ebchx3WwzbM-Z4_KC_LeLBWr5LZMaAkWkF68')"
+      bg="url('https://fastly.picsum.photos/id/345/5000/3333.jpg?hmac=CofBoeQjE3aUDHo5XSGTqev1W_dTKjXh4PSQG2MXKvM')"
       bgSize="cover"
       bgPosition="center"
+      boxShadow="xl"
     >
       <Box
         height={{ base: "50vh", md: "65vh" }}
@@ -26,7 +27,7 @@ const Home = () => (
         <Benefits />
       </Box>
     </VStack>
-    <Box bg="offwhite">
+    <Box bg="offwhite" my={24}>
       <Projects />
     </Box>
     <Box bg="offwhite">
