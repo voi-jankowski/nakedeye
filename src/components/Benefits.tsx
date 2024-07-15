@@ -9,22 +9,22 @@ interface BenefitProps {
 
 const benefits: BenefitProps[] = [
   {
-    title: "Benefit 1",
+    title: "imagine",
     description:
       "This is the first benefit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
   },
   {
-    title: "Benefit 2",
+    title: "go big",
     description:
       "This is the second benefit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
   },
   {
-    title: "Benefit 3",
+    title: "create",
     description:
       "This is the third benefit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
   },
   {
-    title: "Benefit 4",
+    title: "follow",
     description:
       "This is the fourth benefit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
   },

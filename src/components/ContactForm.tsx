@@ -9,7 +9,6 @@ import {
   VStack,
   Textarea,
 } from "@chakra-ui/react";
-import { MdBorderColor } from "react-icons/md";
 
 const ContactForm = () => {
   const inputStyle = {

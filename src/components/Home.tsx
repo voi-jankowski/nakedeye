@@ -14,7 +14,12 @@ const Home = () => (
       bgSize="cover"
       bgPosition="center"
     >
-      <Box height="65vh" width="100%" pt={{ base: 20, sm: 24, md: 36 }} m={0}>
+      <Box
+        height={{ base: "50vh", md: "65vh" }}
+        width="100%"
+        pt={{ base: 20, sm: 24, md: 36 }}
+        m={0}
+      >
         <Subheading />
       </Box>
       <Box width="100%" p={0} m={0}>
