@@ -12,7 +12,7 @@ const Subheading = () => {
       "2xl": "6xl",
     },
     fontWeight: "900",
-    color: "blue",
+    color: "indigo",
   };
 
   return (

@@ -9,7 +9,7 @@ const Home = () => (
   <Container maxW="container.2xl" bg="offwhite" p={0}>
     <VStack
       spacing={0}
-      mt={32}
+      mt={0}
       bg="url('https://fastly.picsum.photos/id/345/5000/3333.jpg?hmac=CofBoeQjE3aUDHo5XSGTqev1W_dTKjXh4PSQG2MXKvM')"
       bgSize="cover"
       bgPosition="center"
