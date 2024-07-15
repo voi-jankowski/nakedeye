@@ -9,7 +9,7 @@ const Home = () => (
   <Container maxW="container.2xl" bg="offwhite" p={0}>
     <VStack
       spacing={0}
-      m={0}
+      mt={32}
       bg="url('https://fastly.picsum.photos/id/345/5000/3333.jpg?hmac=CofBoeQjE3aUDHo5XSGTqev1W_dTKjXh4PSQG2MXKvM')"
       bgSize="cover"
       bgPosition="center"
@@ -20,6 +20,7 @@ const Home = () => (
         width="100%"
         pt={{ base: 20, sm: 24, md: 36 }}
         m={0}
+        id="benefits"
       >
         <Subheading />
       </Box>
@@ -27,10 +28,10 @@ const Home = () => (
         <Benefits />
       </Box>
     </VStack>
-    <Box bg="offwhite" my={24}>
+    <Box id="projects" bg="offwhite" my={24}>
       <Projects />
     </Box>
-    <Box bg="offwhite">
+    <Box id="contact" bg="offwhite">
       <CallToAction />
     </Box>
   </Container>

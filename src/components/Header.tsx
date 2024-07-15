@@ -1,5 +1,6 @@
 // src/components/Header.tsx
 import { Flex, HStack, Text, Image } from "@chakra-ui/react";
+import { Link } from "react-scroll";
 
 const Header = () => (
   <Flex
@@ -29,9 +30,15 @@ const Header = () => (
       pt={{ base: 10, sm: 12, md: 20, lg: 20, xl: 20, "2xl": 20 }}
     />
     <HStack spacing={8} color="white" fontWeight={"bold"} fontSize={"lg"}>
-      <Text>benefits.</Text>
-      <Text>projects.</Text>
-      <Text>contact.</Text>
+      <Link to="benefits" smooth={true} duration={500}>
+        <Text cursor="pointer">benefits.</Text>
+      </Link>
+      <Link to="projects" smooth={true} duration={500}>
+        <Text cursor="pointer">projects.</Text>
+      </Link>
+      <Link to="contact" smooth={true} duration={500}>
+        <Text cursor="pointer">contact.</Text>
+      </Link>
     </HStack>
   </Flex>
 );
