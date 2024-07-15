@@ -1,51 +1,28 @@
 // src/components/Projects.tsx
-import { Flex } from "@chakra-ui/react";
-import ProjectCard from "./ProjectCard";
-
-interface ProjectProps {
-  name: string;
-  image: string;
-  link: string;
-}
-
-const projects: ProjectProps[] = [
-  {
-    name: "Project 1",
-    image:
-      "https://fastly.picsum.photos/id/13/2500/1667.jpg?hmac=SoX9UoHhN8HyklRA4A3vcCWJMVtiBXUg0W4ljWTor7s",
-    link: "https://fastly.picsum.photos/id/13/2500/1667.jpg?hmac=SoX9UoHhN8HyklRA4A3vcCWJMVtiBXUg0W4ljWTor7s",
-  },
-  {
-    name: "Project 2",
-    image:
-      "https://fastly.picsum.photos/id/14/2500/1667.jpg?hmac=ssQyTcZRRumHXVbQAVlXTx-MGBxm6NHWD3SryQ48G-o",
-    link: "https://example.com/project2",
-  },
-  {
-    name: "Project 3",
-    image:
-      "https://fastly.picsum.photos/id/19/2500/1667.jpg?hmac=7epGozH4QjToGaBf_xb2HbFTXoV5o8n_cYzB7I4lt6g",
-    link: "https://example.com/project3",
-  },
-];
+import { Box, Container, Text } from "@chakra-ui/react";
 
 const Projects = () => (
-  <Flex
-    height="100%"
-    justifyContent="space-around"
-    alignItems="center"
-    wrap="wrap"
-    p={4}
-    bg="offwhite"
-  >
-    {projects.map((project) => (
-      <ProjectCard
-        name={project.name}
-        image={project.image}
-        link={project.link}
-      />
-    ))}
-  </Flex>
+  <Container maxW="container.2xl" p={0} m={0}>
+    <Box
+      height={{ base: "50vh", md: "50vh" }}
+      width="100%"
+      bg="url('https://images.unsplash.com/photo-1506748686214-e9df14d4d9d0?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80')"
+      bgSize="cover"
+      bgPosition="center"
+      display="flex"
+      alignItems="center"
+      justifyContent="center"
+    >
+      <Text
+        fontSize={{ base: "2xl", sm: "3xl", md: "4xl", lg: "5xl", xl: "6xl" }}
+        fontWeight="bold"
+        color="white"
+        textAlign="center"
+      >
+        see what we can do.
+      </Text>
+    </Box>
+  </Container>
 );
 
 export default Projects;

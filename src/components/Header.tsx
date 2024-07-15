@@ -28,8 +28,10 @@ const Header = () => (
       }}
       pt={{ base: 10, sm: 12, md: 20, lg: 20, xl: 20, "2xl": 20 }}
     />
-    <HStack spacing={8} color="blue" fontWeight={"bold"} fontSize={"md"}>
-      <Text>Menu Item 1</Text>?
+    <HStack spacing={8} color="white" fontWeight={"bold"} fontSize={"lg"}>
+      <Text>benefits.</Text>
+      <Text>projects.</Text>
+      <Text>contact.</Text>
     </HStack>
   </Flex>
 );

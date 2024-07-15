@@ -6,7 +6,7 @@ import Projects from "./Projects";
 import CallToAction from "./CallToAction";
 
 const Home = () => (
-  <Container maxW="container.2xl" bg="rgb(255, 255, 255)" p={0}>
+  <Container maxW="container.2xl" bg="offwhite" p={0}>
     <VStack
       spacing={0}
       m={0}
