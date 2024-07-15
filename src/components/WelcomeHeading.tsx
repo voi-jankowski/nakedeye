@@ -10,9 +10,6 @@ const WelcomeHeading = () => (
     m={0}
     p={0}
   >
-    <Text fontSize="7xl" fontWeight="bold" color="blue">
-      nakedEyeCreative
-    </Text>
     <Text fontSize="3xl" color="indigo">
       Social Media VFX Marketing Specialist
     </Text>

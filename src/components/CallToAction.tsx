@@ -5,11 +5,11 @@ import ContactForm from "./ContactForm";
 const CallToAction = () => (
   <Box bg="rgba(245, 245, 245, 0.4)" py={8} px={4} mx={6}>
     <Flex
-      direction={{ base: "column", md: "row" }}
+      direction={{ base: "column", lg: "row" }}
       align="right"
       justify="center"
     >
-      <Box textAlign={{ base: "right", md: "right" }} mb={{ base: 8, md: 0 }}>
+      <Box mb={{ base: 8, md: 0 }}>
         <VStack align="end" spacing={4}>
           <Heading as="h2" size="3xl" color="black" lineHeight="shorter">
             <Text as="span" bg="black" color="white" px={2}>
@@ -22,7 +22,7 @@ const CallToAction = () => (
             </Text>
           </Heading>
           <Heading as="h2" size="3xl" color="black" lineHeight="shorter">
-            <Text as="span" bg="black" color="white" px={2}>
+            <Text as="span" bg="black" color="white" px={2} mr={2}>
               you.
             </Text>
           </Heading>
@@ -32,13 +32,23 @@ const CallToAction = () => (
             </Text>
           </Heading>
           <Heading as="h2" size="3xl" color="black" lineHeight="shorter">
-            <Text as="span" bg="black" color="white" px={2}>
+            <Text as="span" bg="black" color="white" px={2} mr={3}>
               rad.
             </Text>
           </Heading>
         </VStack>
       </Box>
-      <Box width={{ base: "80%", md: "50%" }} ml={{ base: "auto", md: 8 }}>
+      <Box
+        width={{
+          base: "100%",
+          sm: "80%",
+          md: "60%",
+          lg: "50%",
+          xl: "40%",
+          "2xl": "30%",
+        }}
+        ml={{ base: 0, md: 8 }}
+      >
         <ContactForm />
       </Box>
     </Flex>

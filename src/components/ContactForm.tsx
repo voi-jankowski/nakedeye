@@ -46,7 +46,7 @@ const ContactForm = () => {
   };
 
   return (
-    <VStack spacing={5} width="80%">
+    <VStack spacing={5}>
       <FormControl isRequired>
         {/* <FormLabel sx={formLabelStyle}>name</FormLabel> */}
         <InputGroup>
