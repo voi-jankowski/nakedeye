@@ -13,8 +13,8 @@ const Footer = () => {
   const { hasCopied, onCopy } = useClipboard("example@example.com");
 
   return (
-    <Box as="footer" py={4} bg="#F5F5F5" color="indigo">
-      <HStack justify="center" spacing={4}>
+    <Box as="footer" py={4} bg="black" color="indigo">
+      <HStack justify="center" spacing={6}>
         <Tooltip
           label={hasCopied ? "Email Copied!" : "Copy Email"}
           closeOnClick={false}
@@ -24,11 +24,11 @@ const Footer = () => {
             aria-label="email"
             variant="ghost"
             size="lg"
-            fontSize="2xl"
+            fontSize="4xl"
             icon={<MdEmail />}
-            _hover={{ bg: "rgba(0, 65, 106, 0.1)" }}
+            _hover={{ transform: "scale(1.2)" }}
             onClick={onCopy}
-            color="indigo"
+            color="white"
           />
         </Tooltip>
         <IconButton
@@ -37,10 +37,10 @@ const Footer = () => {
           aria-label="twitter"
           variant="ghost"
           size="lg"
-          fontSize="2xl"
+          fontSize="4xl"
           icon={<BsTwitter />}
-          _hover={{ bg: "rgba(0, 65, 106, 0.1)" }}
-          color="indigo"
+          _hover={{ transform: "scale(1.2)" }}
+          color="white"
         />
         <IconButton
           as="a"
@@ -48,10 +48,10 @@ const Footer = () => {
           aria-label="linkedin"
           variant="ghost"
           size="lg"
-          fontSize="2xl"
+          fontSize="4xl"
           icon={<BsLinkedin />}
-          _hover={{ bg: "rgba(0, 65, 106, 0.1)" }}
-          color="indigo"
+          _hover={{ transform: "scale(1.2)" }}
+          color="white"
         />
       </HStack>
     </Box>
