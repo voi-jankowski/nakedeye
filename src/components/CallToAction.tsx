@@ -38,7 +38,7 @@ const CallToAction = () => (
           </Heading>
         </VStack>
       </Box>
-      <Box width={{ base: "100%", md: "50%" }} ml={{ md: 8 }}>
+      <Box width={{ base: "80%", md: "50%" }} ml={{ base: "auto", md: 8 }}>
         <ContactForm />
       </Box>
     </Flex>

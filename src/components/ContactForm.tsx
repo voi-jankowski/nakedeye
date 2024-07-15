@@ -1,75 +1,88 @@
 // src/components/ContactForm.tsx
+
 import {
   Button,
   FormControl,
   FormLabel,
   Input,
   InputGroup,
-  InputLeftElement,
   VStack,
   Textarea,
 } from "@chakra-ui/react";
-import { BsPerson } from "react-icons/bs";
-import { MdOutlineEmail } from "react-icons/md";
-import { HiOutlineOfficeBuilding } from "react-icons/hi";
+import { MdBorderColor } from "react-icons/md";
 
 const ContactForm = () => {
   const inputStyle = {
+    border: "none",
     borderBottom: "2px solid",
     borderRadius: "0",
-    borderColor: "gray.400",
-    _focus: { borderColor: "blue.500" },
+    borderColor: "black",
+    _focus: { borderColor: "yellow" },
+  };
+  const textAreaStyle = {
+    border: "none",
+    borderBottom: "2px solid",
+    borderRadius: "0",
+    borderColor: "black",
+    _focus: {
+      borderColor: "yellow",
+      borderBottom: "2px solid",
+      outline: "none",
+      boxShadow: "none",
+    },
   };
 
   return (
-    <VStack spacing={5} width="100%">
+    <VStack spacing={5} width="80%">
       <FormControl isRequired>
-        <FormLabel>Name</FormLabel>
+        <FormLabel color="black" className="urbanist-unique">
+          name
+        </FormLabel>
         <InputGroup>
-          <InputLeftElement children={<BsPerson />} />
+          {/* <InputLeftElement children={<BsPerson />} /> */}
           <Input
             type="text"
             name="name"
-            placeholder="Your Name"
+            // placeholder="Your Name"
             sx={inputStyle}
           />
         </InputGroup>
       </FormControl>
       <FormControl isRequired>
-        <FormLabel>Email</FormLabel>
+        <FormLabel color="black">email</FormLabel>
         <InputGroup>
-          <InputLeftElement children={<MdOutlineEmail />} />
+          {/* <InputLeftElement children={<MdOutlineEmail />} /> */}
           <Input
             type="email"
             name="email"
-            placeholder="Your Email"
+            // placeholder="Your Email"
             sx={inputStyle}
           />
         </InputGroup>
       </FormControl>
-      <FormControl isRequired>
-        <FormLabel>Company</FormLabel>
+      <FormControl>
+        <FormLabel color="black">company</FormLabel>
         <InputGroup>
-          <InputLeftElement children={<HiOutlineOfficeBuilding />} />
+          {/* <InputLeftElement children={<HiOutlineOfficeBuilding />} /> */}
           <Input
             type="text"
             name="company"
-            placeholder="Your Company"
+            // placeholder="Your Company"
             sx={inputStyle}
           />
         </InputGroup>
       </FormControl>
-      <FormControl isRequired>
-        <FormLabel>Message</FormLabel>
+
+      <FormControl isRequired mt={16}>
+        <FormLabel color="black">message</FormLabel>
         <Textarea
           name="message"
-          placeholder="Your Message"
-          rows={6}
-          resize="none"
-          sx={inputStyle}
+          sx={textAreaStyle}
+          rows={2}
+          resize="vertical"
         />
       </FormControl>
-      <Button variant="solid" width="100%" colorScheme="blue">
+      <Button variant="solid" width="100%" colorScheme="blackAlpha">
         Send Message
       </Button>
     </VStack>
