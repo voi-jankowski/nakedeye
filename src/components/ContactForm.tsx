@@ -19,7 +19,12 @@ const ContactForm = () => {
   const sendEmail = (e: FormEvent) => {
     e.preventDefault();
 
-    if (!form.current) return;
+    console.log("sendEmail function triggered.");
+
+    if (!form.current) {
+      console.log("Form is not available.");
+      return;
+    }
 
     const serviceId = process.env.REACT_APP_EMAILJS_SERVICE_ID;
     const templateId = process.env.REACT_APP_EMAILJS_TEMPLATE_ID;
@@ -27,8 +32,15 @@ const ContactForm = () => {
     const autoReplyTemplateId =
       process.env.REACT_APP_EMAILJS_AUTOREPLY_TEMPLATE_ID;
 
+    console.log("Service ID:", serviceId);
+    console.log("Template ID:", templateId);
+    console.log("Public Key:", publicKey);
+    console.log("Auto Reply Template ID:", autoReplyTemplateId);
+    console.log("Form Data:", form.current);
+
     emailjs.sendForm(serviceId!, templateId!, form.current, publicKey!).then(
       () => {
+        console.log("Email sent successfully.");
         toast({
           title: "Message sent.",
           description: "Your message has been sent successfully.",
@@ -39,15 +51,25 @@ const ContactForm = () => {
         form.current?.reset();
         // Send an auto-reply email to the user
         if (form.current) {
-          emailjs.sendForm(
-            serviceId!,
-            autoReplyTemplateId!,
-            form.current,
-            publicKey!
-          );
+          emailjs
+            .sendForm(
+              serviceId!,
+              autoReplyTemplateId!,
+              form.current,
+              publicKey!
+            )
+            .then(
+              () => {
+                console.log("Auto-reply sent successfully.");
+              },
+              (error) => {
+                console.log("Auto-reply failed:", error.text);
+              }
+            );
         }
       },
       (error) => {
+        console.log("Email sending failed:", error.text);
         toast({
           title: "Error.",
           description: `There was an error sending your message: ${error.text}`,
@@ -128,7 +150,6 @@ const ContactForm = () => {
         <FormLabel sx={formLabelStyle}>message</FormLabel>
         <Textarea
           name="message"
-          placeholder="message*"
           sx={textAreaStyle}
           rows={2}
           resize="vertical"

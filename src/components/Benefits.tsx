@@ -3,27 +3,32 @@ import { Box, Grid } from "@chakra-ui/react";
 import BenefitCard from "./BenefitCard";
 
 interface BenefitProps {
+  id: number;
   title: string;
   description: string;
 }
 
 const benefits: BenefitProps[] = [
   {
+    id: 1,
     title: "imagine",
     description:
       "This is the first benefit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
   },
   {
+    id: 2,
     title: "go big",
     description:
       "This is the second benefit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
   },
   {
+    id: 3,
     title: "create",
     description:
       "This is the third benefit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
   },
   {
+    id: 4,
     title: "follow",
     description:
       "This is the fourth benefit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
@@ -43,7 +48,11 @@ const Benefits = () => (
       justifyContent="space-around"
     >
       {benefits.map((benefit) => (
-        <BenefitCard title={benefit.title} description={benefit.description} />
+        <BenefitCard
+          key={benefit.id}
+          title={benefit.title}
+          description={benefit.description}
+        />
       ))}
     </Grid>
   </Box>
