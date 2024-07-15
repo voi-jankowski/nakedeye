@@ -24,6 +24,8 @@ const ContactForm = () => {
     const serviceId = process.env.REACT_APP_EMAILJS_SERVICE_ID;
     const templateId = process.env.REACT_APP_EMAILJS_TEMPLATE_ID;
     const publicKey = process.env.REACT_APP_EMAILJS_PUBLIC_KEY;
+    const autoReplyTemplateId =
+      process.env.REACT_APP_EMAILJS_AUTOREPLY_TEMPLATE_ID;
 
     emailjs.sendForm(serviceId!, templateId!, form.current, publicKey!).then(
       () => {
@@ -35,6 +37,15 @@ const ContactForm = () => {
           isClosable: true,
         });
         form.current?.reset();
+        // Send an auto-reply email to the user
+        if (form.current) {
+          emailjs.sendForm(
+            serviceId!,
+            autoReplyTemplateId!,
+            form.current,
+            publicKey!
+          );
+        }
       },
       (error) => {
         toast({
