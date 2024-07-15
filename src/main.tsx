@@ -1,6 +1,8 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import { ChakraProvider, extendTheme } from "@chakra-ui/react";
+import GlobalStyles from "./components/GlobalStyles";
+
 import App from "./App";
 import "./index.css";
 
@@ -53,6 +55,7 @@ const theme = extendTheme({
 ReactDOM.createRoot(document.getElementById("root")!).render(
   <React.StrictMode>
     <ChakraProvider theme={theme}>
+      <GlobalStyles />
       <App />
     </ChakraProvider>
   </React.StrictMode>
