@@ -50,18 +50,24 @@ const Header = () => {
       <HStack
         spacing={8}
         display={{ base: "none", md: "flex" }}
-        color="white"
+        color="black"
         fontWeight={"bold"}
         fontSize={"lg"}
       >
         <Link to="benefits" smooth={true} duration={500}>
-          <Text cursor="pointer">benefits.</Text>
+          <Text cursor="pointer" bgColor={"white"} px={2}>
+            benefits.
+          </Text>
         </Link>
         <Link to="projects" smooth={true} duration={500}>
-          <Text cursor="pointer">projects.</Text>
+          <Text cursor="pointer" bgColor={"white"} px={2}>
+            projects.
+          </Text>
         </Link>
         <Link to="contact" smooth={true} duration={500}>
-          <Text cursor="pointer">contact.</Text>
+          <Text cursor="pointer" bgColor={"yellow"} ml={-3} px={2}>
+            contact.
+          </Text>
         </Link>
       </HStack>
       <IconButton
