@@ -9,8 +9,8 @@ import {
   InputGroup,
   VStack,
   Textarea,
-  useToast,
 } from "@chakra-ui/react";
+import { useToast } from "@chakra-ui/toast";
 
 const ContactForm = () => {
   const form = useRef<HTMLFormElement>(null);
@@ -26,17 +26,22 @@ const ContactForm = () => {
       return;
     }
 
-    const serviceId = process.env.REACT_APP_EMAILJS_SERVICE_ID;
-    const templateId = process.env.REACT_APP_EMAILJS_TEMPLATE_ID;
-    const publicKey = process.env.REACT_APP_EMAILJS_PUBLIC_KEY;
-    const autoReplyTemplateId =
-      process.env.REACT_APP_EMAILJS_AUTOREPLY_TEMPLATE_ID;
+    const serviceId = import.meta.env.VITE_EMAILJS_SERVICE_ID;
+    const templateId = import.meta.env.VITE_EMAILJS_TEMPLATE_ID;
+    const publicKey = import.meta.env.VITE_EMAILJS_PUBLIC_KEY;
+    const autoReplyTemplateId = import.meta.env
+      .VITE_EMAILJS_AUTOREPLY_TEMPLATE_ID;
 
     console.log("Service ID:", serviceId);
     console.log("Template ID:", templateId);
     console.log("Public Key:", publicKey);
     console.log("Auto Reply Template ID:", autoReplyTemplateId);
     console.log("Form Data:", form.current);
+
+    if (!publicKey || !autoReplyTemplateId) {
+      console.error("Public key or Auto Reply Template ID is missing.");
+      return;
+    }
 
     emailjs.sendForm(serviceId!, templateId!, form.current, publicKey!).then(
       () => {
@@ -48,25 +53,43 @@ const ContactForm = () => {
           duration: 5000,
           isClosable: true,
         });
-        form.current?.reset();
+
         // Send an auto-reply email to the user
-        if (form.current) {
-          emailjs
-            .sendForm(
-              serviceId!,
-              autoReplyTemplateId!,
-              form.current,
-              publicKey!
-            )
-            .then(
-              () => {
-                console.log("Auto-reply sent successfully.");
-              },
-              (error) => {
-                console.log("Auto-reply failed:", error.text);
-              }
-            );
+        const formData = new FormData(form.current!);
+        const userEmail = formData.get("user_email");
+
+        if (!userEmail) {
+          console.error("User email is missing.");
+          toast({
+            title: "Error.",
+            description: "User email is missing for auto-reply.",
+            status: "error",
+            duration: 5000,
+            isClosable: true,
+          });
+          return;
         }
+
+        emailjs
+          .sendForm(serviceId!, autoReplyTemplateId!, form.current!, publicKey!)
+          .then(
+            () => {
+              console.log("Auto-reply sent successfully.");
+            },
+            (error) => {
+              console.log("Auto-reply failed:", error.text);
+              toast({
+                title: "Error.",
+                description: `There was an error sending the auto-reply: ${error.text}`,
+                status: "error",
+                duration: 5000,
+                isClosable: true,
+              });
+            }
+          );
+
+        // Reset the form
+        form.current?.reset();
       },
       (error) => {
         console.log("Email sending failed:", error.text);
