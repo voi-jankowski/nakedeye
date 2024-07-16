@@ -17,7 +17,7 @@ interface BenefitCardProps {
 const BenefitCard: React.FC<BenefitCardProps> = ({ title, description }) => (
   <Card background={"transparent"} rounded={0} color={"white"} mx={6}>
     <CardHeader>
-      <Heading size="2xl">{title}</Heading>
+      <Heading size="xl">{title}</Heading>
     </CardHeader>
     <Divider />
     <CardBody>
