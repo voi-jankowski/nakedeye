@@ -7,24 +7,36 @@ import CallToAction from "./CallToAction";
 
 const Home = () => (
   <Container maxW="container.2xl" bg="offwhite" p={0}>
-    <VStack
-      spacing={0}
-      mt={0}
-      bg="url('https://fastly.picsum.photos/id/345/5000/3333.jpg?hmac=CofBoeQjE3aUDHo5XSGTqev1W_dTKjXh4PSQG2MXKvM')"
-      bgSize="cover"
-      bgPosition="center"
-      boxShadow="xl"
-    >
+    <VStack spacing={0} mt={0} boxShadow="xl" position="relative">
+      <Box
+        as="video"
+        autoPlay
+        loop
+        muted
+        playsInline
+        position="absolute"
+        top={0}
+        left={0}
+        width="100%"
+        height="100%"
+        objectFit="cover"
+      >
+        <source
+          src="public/assets/videos/temporary_video.mp4"
+          type="video/mp4"
+        />
+        Your browser does not support the video tag.
+      </Box>
       <Box
         height={{ base: "50vh", md: "65vh" }}
         width="100%"
         pt={{ base: 20, sm: 24, md: 36 }}
         m={0}
-        id="benefits"
+        zIndex={1}
       >
         <Subheading />
       </Box>
-      <Box width="100%" p={0} m={0}>
+      <Box width="100%" p={0} m={0} zIndex={1}>
         <Benefits />
       </Box>
     </VStack>
