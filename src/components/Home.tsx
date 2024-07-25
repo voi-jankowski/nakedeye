@@ -4,6 +4,7 @@ import Subheading from "./Subheading";
 import Benefits from "./Benefits";
 import Projects from "./Projects";
 import CallToAction from "./CallToAction";
+import WhatWeDo from "./WhatWeDo";
 
 const Home = () => (
   <Container maxW="container.2xl" bg="offwhite" p={0}>
@@ -37,7 +38,7 @@ const Home = () => (
         <Subheading />
       </Box>
       <Box width="100%" p={0} m={0} zIndex={1}>
-        <Benefits />
+        <WhatWeDo />
       </Box>
     </VStack>
     <Box id="projects" bg="offwhite" my={24}>
