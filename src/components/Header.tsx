@@ -35,7 +35,7 @@ const Header = () => {
       alignItems="center"
     >
       <Image
-        src="public/assets/Naked_Eye.png"
+        src="public/assets/NakedEyeCreative_Logo_White.png"
         alt="Logo"
         width={{
           base: 60,
