@@ -1,7 +1,6 @@
 // src/components/Home.tsx
 import { Box, Container, VStack } from "@chakra-ui/react";
 import Subheading from "./Subheading";
-import Benefits from "./Benefits";
 import Projects from "./Projects";
 import CallToAction from "./CallToAction";
 import WhatWeDo from "./WhatWeDo";

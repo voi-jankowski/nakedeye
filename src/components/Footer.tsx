@@ -1,50 +1,36 @@
 // src/components/Footer.tsx
-import {
-  Box,
-  HStack,
-  IconButton,
-  Tooltip,
-  useClipboard,
-} from "@chakra-ui/react";
-import { BsLinkedin, BsTwitter } from "react-icons/bs";
-import { MdEmail } from "react-icons/md";
+import { Box, HStack, IconButton } from "@chakra-ui/react";
+import { BsLinkedin, BsInstagram, BsTiktok } from "react-icons/bs";
 
 const Footer = () => {
-  const { hasCopied, onCopy } = useClipboard("example@example.com");
-
   return (
     <Box as="footer" py={4} bg="black" color="indigo">
       <HStack justify="center" spacing={6}>
-        <Tooltip
-          label={hasCopied ? "Email Copied!" : "Copy Email"}
-          closeOnClick={false}
-          hasArrow
-        >
-          <IconButton
-            aria-label="email"
-            variant="ghost"
-            size="lg"
-            fontSize="4xl"
-            icon={<MdEmail />}
-            _hover={{ transform: "scale(1.2)" }}
-            onClick={onCopy}
-            color="white"
-          />
-        </Tooltip>
         <IconButton
           as="a"
-          href="#"
-          aria-label="twitter"
+          href="https://www.instagram.com/nakedeye_creative?igsh=YnBzOGVqc3pobDcy&utm_source=qr"
+          aria-label="instagram"
           variant="ghost"
           size="lg"
           fontSize="4xl"
-          icon={<BsTwitter />}
+          icon={<BsInstagram />}
           _hover={{ transform: "scale(1.2)" }}
           color="white"
         />
         <IconButton
           as="a"
-          href="#"
+          href="https://www.tiktok.com/@naked.eye.creativ?_t=8oIWhHpBlWT&_r=1"
+          aria-label="tiktok"
+          variant="ghost"
+          size="lg"
+          fontSize="4xl"
+          icon={<BsTiktok />}
+          _hover={{ transform: "scale(1.2)" }}
+          color="white"
+        />
+        <IconButton
+          as="a"
+          href="https://www.linkedin.com/in/grant-nelson-b4461631b/"
           aria-label="linkedin"
           variant="ghost"
           size="lg"

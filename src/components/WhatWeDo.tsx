@@ -1,5 +1,5 @@
 // src/components/WhatWeDo.tsx
-import { Box, Heading, Text, VStack } from "@chakra-ui/react";
+import { Box, Text, VStack } from "@chakra-ui/react";
 
 const WhatWeDo = () => {
   return (
