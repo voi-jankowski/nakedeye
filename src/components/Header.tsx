@@ -24,13 +24,13 @@ const Header = () => {
     <Flex
       as="header"
       position="fixed"
-      h={{ base: 16, sm: 20, md: 28, lg: 32, xl: 32, "2xl": 36 }}
+      h={{ base: 16, sm: 20, md: 28, lg: 32, xl: 32, "2xl": 52 }}
       top="0"
       left="0"
       width="100%"
       bg="black"
       p={{ base: 6, sm: 6, md: 8, lg: 10, xl: 10, "2xl": 16 }}
-      zIndex={1}
+      zIndex={2}
       justifyContent="space-between"
       alignItems="center"
     >
@@ -45,7 +45,7 @@ const Header = () => {
           xl: "28rem",
           "2xl": "30rem",
         }}
-        pt={{ base: 10, sm: 12, md: 20, lg: 20, xl: 20, "2xl": 20 }}
+        pt={{ base: 10, sm: 12, md: 20, lg: 20, xl: 20, "2xl": 4 }}
       />
       <HStack
         spacing={8}
