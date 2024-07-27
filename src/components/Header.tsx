@@ -33,6 +33,7 @@ const Header = () => {
       zIndex={2}
       justifyContent="space-between"
       alignItems="center"
+      borderBottom={"2px solid yellow"}
     >
       <Image
         src="public/assets/NakedEyeCreative_Logo_White.png"
