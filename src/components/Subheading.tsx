@@ -11,8 +11,8 @@ const Subheading = () => {
       xl: "5xl",
       "2xl": "6xl",
     },
-    fontWeight: "900",
-    color: "indigo",
+    fontWeight: "400",
+    color: "white",
   };
 
   return (
