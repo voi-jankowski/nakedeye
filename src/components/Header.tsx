@@ -24,7 +24,7 @@ const Header = () => {
     <Flex
       as="header"
       position="fixed"
-      h={{ base: 16, sm: 20, md: 28, lg: 32, xl: 32, "2xl": 52 }}
+      h={{ base: 28, sm: 32, md: 40, lg: 48, xl: 48, "2xl": 52 }}
       top="0"
       left="0"
       width="100%"
@@ -46,7 +46,7 @@ const Header = () => {
           xl: "28rem",
           "2xl": "30rem",
         }}
-        pt={{ base: 10, sm: 12, md: 20, lg: 20, xl: 20, "2xl": 4 }}
+        pt={{ base: 4, sm: 4, md: 5, lg: 6, xl: 6, "2xl": 4 }}
       />
       <HStack
         spacing={8}
