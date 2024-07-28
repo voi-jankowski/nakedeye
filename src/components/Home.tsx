@@ -21,10 +21,7 @@ const Home = () => (
         height="100%"
         objectFit="cover"
       >
-        <source
-          src="public/assets/videos/temporary_video.mp4"
-          type="video/mp4"
-        />
+        <source src="public/assets/videos/Temp_Video_2.mp4" type="video/mp4" />
         Your browser does not support the video tag.
       </Box>
       <Box

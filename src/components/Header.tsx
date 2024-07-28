@@ -28,12 +28,12 @@ const Header = () => {
       top="0"
       left="0"
       width="100%"
-      bg="black"
+      bg="transparent"
       p={{ base: 6, sm: 6, md: 8, lg: 10, xl: 10, "2xl": 16 }}
       zIndex={2}
       justifyContent="space-between"
       alignItems="center"
-      borderBottom={"2px solid yellow"}
+      // borderBottom={"2px solid yellow"}
     >
       <Image
         src="public/assets/NakedEyeCreative_Logo_White.png"
@@ -55,11 +55,11 @@ const Header = () => {
         fontWeight={"bold"}
         fontSize={"lg"}
       >
-        <Link to="benefits" smooth={true} duration={500}>
+        {/* <Link to="benefits" smooth={true} duration={500}>
           <Text cursor="pointer" bgColor={"white"} px={2}>
             benefits.
           </Text>
-        </Link>
+        </Link> */}
         <Link to="projects" smooth={true} duration={500}>
           <Text cursor="pointer" bgColor={"white"} px={2}>
             projects.
@@ -95,14 +95,14 @@ const Header = () => {
                 fontWeight={"bold"}
                 fontSize={"3xl"}
               >
-                <Link
+                {/* <Link
                   to="benefits"
                   smooth={true}
                   duration={500}
                   onClick={onClose}
                 >
                   <Text cursor="pointer">benefits.</Text>
-                </Link>
+                </Link> */}
                 <Link
                   to="projects"
                   smooth={true}
