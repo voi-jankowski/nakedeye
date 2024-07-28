@@ -23,7 +23,7 @@ const Header = () => {
   return (
     <Flex
       as="header"
-      position="fixed"
+      position="absolute"
       h={{ base: 28, sm: 32, md: 40, lg: 48, xl: 48, "2xl": 52 }}
       top="0"
       left="0"

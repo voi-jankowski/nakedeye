@@ -4,7 +4,7 @@ import { BsLinkedin, BsInstagram, BsTiktok } from "react-icons/bs";
 
 const Footer = () => {
   return (
-    <Box as="footer" py={4} bg="black" color="indigo">
+    <Box as="footer" mt={10} py={4} bg="ofwhite" color="indigo">
       <HStack justify="center" spacing={6}>
         <IconButton
           as="a"
@@ -15,7 +15,7 @@ const Footer = () => {
           fontSize="4xl"
           icon={<BsInstagram />}
           _hover={{ transform: "scale(1.2)" }}
-          color="white"
+          color="black"
         />
         <IconButton
           as="a"
@@ -26,7 +26,7 @@ const Footer = () => {
           fontSize="4xl"
           icon={<BsTiktok />}
           _hover={{ transform: "scale(1.2)" }}
-          color="white"
+          color="black"
         />
         <IconButton
           as="a"
@@ -37,7 +37,7 @@ const Footer = () => {
           fontSize="4xl"
           icon={<BsLinkedin />}
           _hover={{ transform: "scale(1.2)" }}
-          color="white"
+          color="black"
         />
       </HStack>
     </Box>
