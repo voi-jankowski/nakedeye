@@ -4,14 +4,14 @@ import { Box, Text } from "@chakra-ui/react";
 const Subheading = () => {
   const textStyle = {
     fontSize: {
-      base: "3xl",
-      sm: "3xl",
-      md: "4xl",
-      lg: "5xl",
-      xl: "5xl",
-      "2xl": "6xl",
+      base: "2xl",
+      sm: "2xl",
+      md: "3xl",
+      lg: "4xl",
+      xl: "4xl",
+      "2xl": "4xl",
     },
-    fontWeight: "400",
+    fontWeight: "200",
     color: "white",
   };
 
