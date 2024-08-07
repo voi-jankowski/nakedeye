@@ -23,7 +23,7 @@ const Home = () => (
         opacity={0.7}
         // boxShadow="xl"
       >
-        <source src="public/assets/videos/website_video.mp4" type="video/mp4" />
+        <source src="/assets/videos/website_video.mp4" type="video/mp4" />
         Your browser does not support the video tag.
       </Box>
       <Box

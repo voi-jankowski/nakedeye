@@ -35,7 +35,7 @@ const Header = () => {
       // borderBottom={"2px solid yellow"}
     >
       <Image
-        src="public/assets/NakedEyeCreative_Logo_White.png"
+        src="/assets/NakedEyeCreative_Logo_White.png"
         alt="Logo"
         width={{
           base: 60,
