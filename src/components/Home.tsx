@@ -7,7 +7,7 @@ import WhatWeDo from "./WhatWeDo";
 
 const Home = () => (
   <Container maxW="container.2xl" bg="offwhite" p={0}>
-    <VStack spacing={0} mt={0} boxShadow="xl" position="relative">
+    <VStack spacing={0} mt={0} boxShadow="xl" position="relative" bg="black">
       <Box
         as="video"
         autoPlay
@@ -20,8 +20,9 @@ const Home = () => (
         width="100%"
         height="100%"
         objectFit="cover"
+        opacity={0.7} // Adjust the opacity here
       >
-        <source src="public/assets/videos/Temp_Video_4.mp4" type="video/mp4" />
+        <source src="public/assets/videos/website_video.mp4" type="video/mp4" />
         Your browser does not support the video tag.
       </Box>
       <Box
@@ -33,10 +34,10 @@ const Home = () => (
       >
         <Subheading />
       </Box>
-      <Box width="100%" p={0} m={0} zIndex={1}>
-        <WhatWeDo />
-      </Box>
     </VStack>
+    <Box width="100%" p={0} m={10}>
+      <WhatWeDo />
+    </Box>
     <Box id="projects" bg="offwhite" my={24}>
       <Projects />
     </Box>
