@@ -18,6 +18,7 @@ const WhatWeDo = () => {
   return (
     <Box
       textAlign="right"
+      m={{ base: 8, sm: 8, md: 8, lg: 8, xl: 8, "2xl": 10 }}
       p={{ base: 8, sm: 8, md: 10, lg: 12, xl: 12, "2xl": 16 }}
     >
       <Text sx={textStyle}>

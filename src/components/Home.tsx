@@ -37,13 +37,17 @@ const Home = () => (
         <Subheading />
       </Box>
     </VStack>
-    <Box width="100%" p={0} m={10}>
+    <Box width="100%" p={0} mx={10}>
       <WhatWeDo />
     </Box>
     {/* <Box id="projects" bg="offwhite" my={24}>
       <Projects />
     </Box> */}
-    <Box id="contact" bg="offwhite" mt={10}>
+    <Box
+      id="contact"
+      bg="offwhite"
+      my={{ base: 8, sm: 12, md: 14, lg: 20, xl: 24, "2xl": 32 }}
+    >
       <CallToAction />
     </Box>
   </Container>
