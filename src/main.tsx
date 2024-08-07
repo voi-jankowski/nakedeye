@@ -11,6 +11,7 @@ const theme = extendTheme({
     offwhite: "#F5F5F5",
     indigo: "#00416A",
     blue: "#021858",
+    yellow: "#EFC621",
   },
   fonts: {
     heading: "'Urbanist', sans-serif",
