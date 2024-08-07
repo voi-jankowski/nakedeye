@@ -1,73 +1,39 @@
 // src/components/WhatWeDo.tsx
-import { Box, Text, VStack, Flex } from "@chakra-ui/react";
+import { Box, Text } from "@chakra-ui/react";
 
 const WhatWeDo = () => {
+  const textStyle = {
+    fontSize: {
+      base: "2xl",
+      sm: "2xl",
+      md: "3xl",
+      lg: "4xl",
+      xl: "4xl",
+      "2xl": "4xl",
+    },
+    fontWeight: "400",
+    color: "black",
+  };
+
   return (
-    <Box height="100%" bg="transparent" p={8}>
-      <Flex
-        align="center"
-        flexWrap={"wrap"}
-        justifyContent={"center"}
-        // alignContent="space-between"
-        height="100%"
-      >
+    <Box
+      textAlign="right"
+      p={{ base: 8, sm: 8, md: 10, lg: 12, xl: 12, "2xl": 16 }}
+    >
+      <Text sx={textStyle}>
+        We craft advanced renders that evoke immersive experiences, pushing the
+        limits of reality through interactive content, that captivates{" "}
         <Text
-          fontSize="2xl"
-          fontWeight={700}
-          color="white"
-          bg="rgba(0, 0, 0, 0.6)"
-          p={0}
-          m={2}
+          as="span"
+          fontSize="inherit"
+          fontWeight="700"
+          bgColor={"yellow"}
+          py={2}
+          px={4}
         >
-          We craft advanced renders that
+          attention.
         </Text>
-        <Text
-          fontSize="2xl"
-          fontWeight={700}
-          color="white"
-          bg="rgba(0, 0, 0, 0.6)"
-          px={"10px"}
-          py={"5px"}
-          m={0.5}
-        >
-          evoke immersive experiences,
-        </Text>
-        <Text
-          fontSize="2xl"
-          fontWeight={700}
-          color="white"
-          bg="rgba(0, 0, 0, 0.6)"
-          p={0}
-          m={3}
-        >
-          pushing the limits of reality through
-        </Text>
-        <Text
-          fontSize="2xl"
-          fontWeight={700}
-          color="white"
-          bg="rgba(0, 0, 0, 0.6)"
-          px={"10px"}
-          py={"5px"}
-          m={3}
-        >
-          interactive content,
-        </Text>
-        <Text
-          fontSize="2xl"
-          fontWeight={700}
-          color="white"
-          bg="rgba(0, 0, 0, 0.6)"
-          px={"12px"}
-          py={"5px"}
-          m={0.5}
-        >
-          that captivates{" "}
-          <Text as="span" fontSize="3xl">
-            attention.
-          </Text>
-        </Text>
-      </Flex>
+      </Text>
     </Box>
   );
 };
