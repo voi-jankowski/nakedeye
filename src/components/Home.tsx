@@ -4,6 +4,7 @@ import Subheading from "./Subheading";
 import Projects from "./Projects";
 import CallToAction from "./CallToAction";
 import WhatWeDo from "./WhatWeDo";
+import Benefits from "./Benefits";
 
 const Home = () => (
   <Container maxW="container.2xl" bg="offwhite" p={0}>
@@ -20,7 +21,8 @@ const Home = () => (
         width="100%"
         height="100%"
         objectFit="cover"
-        opacity={0.7} // Adjust the opacity here
+        opacity={0.7}
+        // boxShadow="xl"
       >
         <source src="public/assets/videos/website_video.mp4" type="video/mp4" />
         Your browser does not support the video tag.
@@ -38,10 +40,10 @@ const Home = () => (
     <Box width="100%" p={0} m={10}>
       <WhatWeDo />
     </Box>
-    <Box id="projects" bg="offwhite" my={24}>
+    {/* <Box id="projects" bg="offwhite" my={24}>
       <Projects />
-    </Box>
-    <Box id="contact" bg="offwhite">
+    </Box> */}
+    <Box id="contact" bg="offwhite" mt={10}>
       <CallToAction />
     </Box>
   </Container>

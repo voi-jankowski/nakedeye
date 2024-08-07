@@ -12,7 +12,7 @@ const Projects = () => (
       display="flex"
       alignItems="center"
       justifyContent="center"
-      boxShadow="xl"
+      // boxShadow="xl"
     >
       <Text
         fontSize={{ base: "2xl", sm: "3xl", md: "4xl", lg: "5xl", xl: "6xl" }}

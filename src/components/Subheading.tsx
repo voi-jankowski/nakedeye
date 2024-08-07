@@ -21,7 +21,7 @@ const Subheading = () => {
       p={{ base: 8, sm: 8, md: 10, lg: 12, xl: 12, "2xl": 16 }}
     >
       <Text sx={textStyle}>vfx.</Text>
-      <Text sx={textStyle}>marketing.</Text>
+      <Text sx={textStyle}>advertising.</Text>
       <Text sx={textStyle}>specialists.</Text>
     </Box>
   );
