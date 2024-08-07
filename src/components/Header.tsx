@@ -48,12 +48,13 @@ const Header = () => {
         }}
         pt={{ base: 4, sm: 4, md: 5, lg: 6, xl: 6, "2xl": 4 }}
       />
-      <HStack
-        spacing={8}
+      <VStack
+        spacing={3}
         display={{ base: "none", md: "flex" }}
         color="black"
         fontWeight={"bold"}
         fontSize={"lg"}
+        alignItems="flex-end"
       >
         {/* <Link to="benefits" smooth={true} duration={500}>
           <Text cursor="pointer" bgColor={"white"} px={2}>
@@ -66,11 +67,11 @@ const Header = () => {
           </Text>
         </Link>
         <Link to="contact" smooth={true} duration={500}>
-          <Text cursor="pointer" bgColor={"yellow"} ml={-3} px={2}>
+          <Text cursor="pointer" bgColor={"yellow"} px={2}>
             contact.
           </Text>
         </Link>
-      </HStack>
+      </VStack>
       <IconButton
         aria-label="Open Menu"
         icon={<HamburgerIcon />}
@@ -83,15 +84,24 @@ const Header = () => {
       />
       <Drawer placement="top" onClose={onClose} isOpen={isOpen}>
         <DrawerOverlay>
-          <DrawerContent bg="black">
-            <DrawerCloseButton color="white" />
-            <DrawerHeader borderBottomWidth="1px" fontSize="2xl" color="yellow">
-              menu
+          <DrawerContent bg="offwhite">
+            <DrawerCloseButton color="black" />
+            <DrawerHeader borderBottomWidth="1px" fontSize="2xl" color="black">
+              <Text
+                as="span"
+                fontSize="inherit"
+                fontWeight="700"
+                bgColor={"yellow"}
+                py={2}
+                px={4}
+              >
+                menu
+              </Text>
             </DrawerHeader>
             <DrawerBody my={14}>
               <VStack
                 spacing={8}
-                color="white"
+                color="black"
                 fontWeight={"bold"}
                 fontSize={"3xl"}
               >

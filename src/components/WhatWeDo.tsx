@@ -22,8 +22,9 @@ const WhatWeDo = () => {
     >
       <Text sx={textStyle}>
         We craft advanced renders that evoke immersive experiences, pushing the
-        limits of reality through interactive content, that captivates{" "}
-        <Text
+        limits of reality through interactive content, that captivates
+        attention.
+        {/* <Text
           as="span"
           fontSize="inherit"
           fontWeight="700"
@@ -32,7 +33,7 @@ const WhatWeDo = () => {
           px={4}
         >
           attention.
-        </Text>
+        </Text> */}
       </Text>
     </Box>
   );
