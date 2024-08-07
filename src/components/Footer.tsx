@@ -19,7 +19,7 @@ const Footer = () => {
         />
         <IconButton
           as="a"
-          href="https://www.tiktok.com/@naked.eye.creativ?_t=8oIWhHpBlWT&_r=1"
+          href="https://www.tiktok.com/@naked.eye.creative?_t=8ofHYujCoK1&_r=1"
           aria-label="tiktok"
           variant="ghost"
           size="lg"
@@ -28,7 +28,7 @@ const Footer = () => {
           _hover={{ transform: "scale(1.2)" }}
           color="black"
         />
-        <IconButton
+        {/* <IconButton
           as="a"
           href="https://www.linkedin.com/in/grant-nelson-b4461631b/"
           aria-label="linkedin"
@@ -38,7 +38,7 @@ const Footer = () => {
           icon={<BsLinkedin />}
           _hover={{ transform: "scale(1.2)" }}
           color="black"
-        />
+        /> */}
       </HStack>
     </Box>
   );
