@@ -1,10 +1,9 @@
 // src/components/Home.tsx
 import { Box, Container, VStack } from "@chakra-ui/react";
 import Subheading from "./Subheading";
-import Projects from "./Projects";
+
 import CallToAction from "./CallToAction";
 import WhatWeDo from "./WhatWeDo";
-import Benefits from "./Benefits";
 
 const Home = () => (
   <Container maxW="container.2xl" bg="offwhite" p={0}>

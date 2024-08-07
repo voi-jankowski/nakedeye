@@ -1,6 +1,6 @@
 // src/components/Footer.tsx
 import { Box, HStack, IconButton } from "@chakra-ui/react";
-import { BsLinkedin, BsInstagram, BsTiktok } from "react-icons/bs";
+import { BsInstagram, BsTiktok } from "react-icons/bs";
 
 const Footer = () => {
   return (

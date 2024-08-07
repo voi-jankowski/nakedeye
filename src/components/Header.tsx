@@ -1,7 +1,6 @@
 // src/components/Header.tsx
 import {
   Flex,
-  HStack,
   Text,
   Image,
   IconButton,
